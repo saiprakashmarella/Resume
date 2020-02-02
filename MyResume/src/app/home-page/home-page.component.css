@@ -1,0 +1,374 @@
+body {
+  margin: auto;
+  padding: 0px;
+  position: relative;
+}
+
+#logo {
+  background: linear-gradient(to bottom, #00cc99 0%, #00ff99 100%);
+  height: 100vh;
+}
+
+.dot {
+  height: 65px;
+  width: 65px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#logoLabel {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+  margin-left: 19px;
+  color: #00cc99;
+}
+
+#content {
+  margin-top: 20px;
+}
+
+.collapse {
+  color: white;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  margin-right: 40px;
+  font-family: sans-serif;
+
+
+}
+
+.typeWrite {
+  animation-name: roleAnimate;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+#HomeInfo {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#HomeInfo_1 {
+  font-size: 28px;
+  font-family: 'Raleway', 'sans-serif';
+  font: bold;
+}
+
+span {
+  font-family: 'Raleway', 'sans-serif';
+
+}
+
+#divider {
+  margin-top: 40px;
+}
+
+#HomeInfo_obj {
+  color: grey;
+}
+
+@keyframes roleAnimate {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#imageContent {
+  margin-top: 140px;
+  margin-left: -100px;
+}
+
+#homeDescription {
+  margin-left: -150px;
+  margin-top: 140px;
+}
+
+
+#footer {
+  margin-top: 60px;
+  margin-left: 450px;
+}
+
+#footerIcons {
+  margin-right: 30px;
+}
+
+#projDescription {
+  margin-top: 50px;
+  margin-left: -180px;
+}
+
+#prev {
+  margin-bottom: -90px;
+}
+
+@media only screen and (min-width:768px) and (max-width:900px) {
+  #logo {
+    height: 110vh;
+  }
+
+  #footer {
+    margin-top: 60px;
+    margin-left: 200px;
+  }
+
+  #footerIcons {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width:500px) {
+  #logo {
+    width: 100vw;
+    height: 60px;
+  }
+
+  #footer {
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+
+  #footerIcons {
+    margin-right: 20px;
+  }
+
+  #divider {
+    margin-top: 0px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #collapsibleNavbar {
+    margin-right: 100px;
+  }
+
+  #navbarDD {
+    margin-top: -130px;
+    margin-left: 300px;
+
+  }
+
+
+  #logoLabel {
+
+    justify-content: start;
+  }
+
+  .dot {
+    margin-left: 10px;
+    margin-top: 5px;
+
+    height: 50px;
+    width: 50px;
+  }
+
+  #logoLabel {
+    margin-left: 13px;
+    margin-top: 12px;
+  }
+
+  #imageContent {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 110%;
+  }
+
+  #homeDescription {
+    margin-left: 50px;
+    margin-top: 20px;
+
+
+  }
+
+  #projDescription {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  #HomeInfo_1 {
+    font-size: 16px;
+  }
+
+  #userImage {
+    border: 8px solid #00ff99;
+    width: 360px;
+
+  }
+
+}
+
+@media only screen and (min-width:501px) and (max-width:700px) {
+  #logo {
+    width: 100vw;
+    height: 60px;
+  }
+
+  #footer {
+    margin-top: 60px;
+    margin-left: 20px;
+  }
+
+  #footerIcons {
+    margin-right: 20px;
+  }
+
+  #divider {
+    margin-top: 0px;
+  }
+
+  #navbarDD {
+    margin-top: -130px;
+    margin-left: 350px;
+
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #logoLabel {
+
+    justify-content: start;
+  }
+
+  .dot {
+    margin-left: 10px;
+    margin-top: 5px;
+
+    height: 50px;
+    width: 50px;
+  }
+
+  #logoLabel {
+    margin-left: 13px;
+    margin-top: 12px;
+  }
+
+  #imageContent {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 110%;
+  }
+
+  #homeDescription {
+    margin-left: 20px;
+    margin-top: 20px;
+
+  }
+
+  #HomeInfo_1 {
+    font-size: 16px;
+  }
+
+  #userImage {
+    border: 8px solid #00ff99;
+    width: 450px;
+
+  }
+
+}
+
+@media only screen and (min-width:701px) and (max-width:767px) {
+  #logo {
+    width: 100vw;
+    height: 60px;
+  }
+
+  #divider {
+    margin-top: 0px;
+  }
+
+  #navbarDD {
+    margin-top: -130px;
+    margin-left: 500px;
+
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  #logoLabel {
+
+    justify-content: start;
+  }
+
+  .dot {
+    margin-left: 10px;
+    margin-top: 5px;
+
+    height: 50px;
+    width: 50px;
+  }
+
+  #logoLabel {
+    margin-left: 13px;
+    margin-top: 12px;
+  }
+
+  #imageContent {
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 110%;
+  }
+
+  #homeDescription {
+    margin-left: 20px;
+    margin-top: 20px;
+
+  }
+
+  #HomeInfo_1 {
+    font-size: 16px;
+  }
+
+  #userImage {
+    border: 8px solid #00ff99;
+    width: 600px;
+
+  }
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1050px) {
+  #homeDescription {
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:750px) {
+  #logo {
+    width: 100vw;
+    height: 60px;
+  }
+
+  #navbarDD {
+    margin-left: 450px;
+  }
+}
+
+@media only screen and (min-width:601px) and (max-width:670px) {
+  #logo {
+    width: 100vw;
+    height: 60px;
+  }
+
+  #navbarDD {
+    margin-left: 420px;
+  }
+}

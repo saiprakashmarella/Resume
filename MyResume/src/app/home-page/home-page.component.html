@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-md-3" id="logo">
+        <span class="dot"><Label id="logoLabel">SM</Label></span>
+      </div>
+      <div class="col-12 col-md-9" id="content">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-10">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <!-- Brand -->
+              <a class="navbar-brand" href="#"></a>
+
+              <!-- Toggler/collapsibe Button -->
+              <button id="navbarDD" class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Navbar links -->
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" id="Home" href (click)="!!Home()">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href id="About" (click)="!!About()">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href id="Experience" (click)="!!Home()">Experience</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href id="Projects" (click)="!!Project()">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href id="Achievements" (click)="!!Home()">Achievements</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href id="Contact" (click)="!!Contact()">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-6" id="imageContent">
+            <div id="logoImage">
+              <img src="../../assets/Images/FB_Image_240_240.jpg" id="userImage" class="rounded" alt="ProfileImage">
+            </div>
+          </div>
+          <div class="col-6 col-md-6" id="homeDescription" *ngIf="HomeSec">
+            <p id="HomeInfo_1" style="font: bold;"> Hello,</p>
+
+            <p id="HomeInfo_1"> I am Sai Marella</p>
+
+            <p id="HomeInfo_1">Full Stack Developer</p>
+            <p id="HomeInfo_obj">Looking to Pursue a challenging career and be a part of progressive organization
+              that
+              gives a scope to enhance my knowledge and utilize my skills and grow with the organizations</p>
+          </div>
+
+          <div class="col-6 col-md-6" id="homeDescription" *ngIf="contactSec">
+            <br>
+            <div class="row">
+              <div class="col-6">
+                <span> Get in Touch</span>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <span><i style="margin-right: 10px;" class="fa fa-location-arrow"></i>Hyderabad,Telanga,India</span>
+              </div>
+              <div class="col-12 col-md-6">
+                <span><i style="margin-right: 10px;" class="fa fa-envelope"></i>saiprakashmarella3277</span>
+              </div>
+
+            </div>
+            <div id="divider">
+
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <span><i style="margin-right:10px" class="fa fa-mobile"></i> 123456789</span>
+              </div>
+              <div class="col-12 col-md-6">
+                <span><i style="margin-right:10px" class="fa fa-fax"></i> 123456789</span>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="col-6 col-md-6" id="homeDescription" *ngIf="projSec">
+            <br>
+            <div class="row">
+
+              <div class="col-12 col-md-12" style="margin-left: 20px;">
+                <p>Project Name: {{projectName}}</p>
+                <p>Technologies Used: {{Technologies}}</p>
+                <p>Description:{{description}}</p>
+                <p>Role:{{role}}</p>
+                <p>ProjectDuration:{{duration}}</p>
+              </div>
+
+            </div>
+            <br>
+
+            <div class="row">
+              <div class="col-2 col-md-2">
+
+              </div>
+              <div class="col-8 col-md-8">
+                <a class="nav-item" href id="prev" style="margin-right: 60px;margin-left: 20px;"
+                  (click)="!!prev()"><span><i class="fa fa-chevron-left"></i></span></a>
+                <a class="nav-item" href id="next" (click)="!!next()"><span><i
+                      class="fa fa-chevron-right"></i></span></a>
+              </div>
+              <div class="col-2 col-md-2">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6" id="footer">
+            <div class="row">
+              <div class="col-12 col-md-2">
+
+              </div>
+              <div class="col-12 col-md-10" id="followme">
+                Follow Me :
+                <span id="footerIcons" style="margin-left: 20px;"><i class="fa fa-facebook-f"></i></span>
+                <span id="footerIcons"><i class="fa fa-google-plus-square"></i></span>
+                <span id="footerIcons"><i class="fa fa-linkedin"></i></span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
